@@ -13,3 +13,7 @@
 */
 
 require __DIR__.'/vendor/autoload.php';
+
+use App\Sort;
+
+print_r(Sort::insertion([3,2,1,7,4,5,6,9,8,10]));
