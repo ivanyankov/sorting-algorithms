@@ -24,4 +24,27 @@ class Sort
 
         return $data;
     }
+
+    /**
+     * Insertion sort
+     * @param array $data
+     * @return array
+     */
+    public static function bubble($data) : array
+    {
+        $index = count($data) - 1;
+
+        while($index >= 0) {
+            for($i = 0; $i < $index; $i++) {
+                if($data[$i] > $data[$i + 1]) {
+                    $current = $data[$i];
+                    $data[$i] = $data[$i + 1];
+                    $data[$i + 1] = $current;
+                }
+            }
+            $index--;
+        }
+
+        return $data;
+    }
 }

@@ -16,4 +16,8 @@ require __DIR__.'/vendor/autoload.php';
 
 use App\Sort;
 
-print_r(Sort::insertion([3,2,1,7,4,5,6,9,8,10]));
+$data = [10,2,1,7,8,5,6,9,4,3];
+$insertion = Sort::insertion($data);
+$bubble = Sort::bubble($data);
+
+print_r($bubble);
